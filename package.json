@@ -1,7 +1,7 @@
 {
   "name": "my-pdf-editor-windows-98-edition",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "main": "electron-main.cjs",
   "scripts": {
@@ -16,7 +16,8 @@
       "output": "dist-electron"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "public/favicon.ico"
     },
     "files": [
       "dist/**/*",

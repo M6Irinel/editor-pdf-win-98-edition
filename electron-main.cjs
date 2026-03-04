@@ -10,7 +10,10 @@ function createWindow() {
       contextIsolation: false
     },
     autoHideMenuBar: true,
-    title: "Mio Editor PDF"
+    title: "My Editor PDF",
+    icon: process.env.NODE_ENV === 'development' 
+      ? path.join(__dirname, 'public', 'favicon.ico')
+      : path.join(__dirname, 'dist', 'favicon.ico')
   })
 
   if (process.env.NODE_ENV === 'development') {

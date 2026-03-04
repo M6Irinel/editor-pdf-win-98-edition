@@ -68,7 +68,7 @@ function App() {
   return (
     <div className="window" style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column" }}>
       <div className="title-bar">
-        <div className="title-bar-text">My Editor PDF - Windows 98 Edition - by M6Irinel</div>
+        <div className="title-bar-text">Windows 98 Edition - by M6Irinel</div>
       </div>
 
       <div className="window-body" style={{ flex: 1, display: "flex", flexDirection: "column", margin: 0, padding: 0, minHeight: 0 }}>
@@ -97,7 +97,7 @@ function App() {
               <h1 style={{ fontFamily: "Pixelated MS Sans Serif", color: "#000" }}>My Editor PDF</h1>
               <p style={{ fontFamily: "Pixelated MS Sans Serif", color: "#000" }}>Windows 98 Edition</p>
               <p style={{ fontFamily: "Pixelated MS Sans Serif", color: "#000" }}>by M6Irinel</p>
-
+              <p style={{ fontFamily: "Pixelated MS Sans Serif", color: "#000" }}>-</p>
               <p style={{ color: "#000" }}>Upload a PDF to start editing</p>
             </div>
           )}
