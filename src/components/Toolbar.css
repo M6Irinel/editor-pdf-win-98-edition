@@ -1,0 +1,18 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background: #c0c0c0;
+  border-bottom: 2px solid #808080;
+  z-index: 100;
+}
+
+.toolbar-left,
+.toolbar-center,
+.toolbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+/* Rimuovo le classi custom dei bottoni così 98.css può applicare lo stile nativo */

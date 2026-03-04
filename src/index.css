@@ -1,0 +1,15 @@
+/* Rimosso reset globale per non interferire con 98.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pixelated MS Sans Serif', Arial;
+  -webkit-font-smoothing: none;
+  background: #008080; /* Windows 98 desktop background */
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}

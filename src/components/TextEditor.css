@@ -1,0 +1,17 @@
+.text-input {
+  position: absolute;
+  border: 1px dotted #000;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  min-width: 10px;
+  z-index: 1000;
+}
+
+.text-controls {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1001;
+  min-width: 250px;
+}

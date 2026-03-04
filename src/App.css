@@ -1,0 +1,18 @@
+/* Rimosso .app perché uso .window direttamente in App.jsx */
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome-screen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-screen p {
+  font-size: 1.2rem;
+}
