@@ -16,7 +16,6 @@ function Toolbar({ onFileLoad, mode, onModeChange, onSave, onUndo, canUndo, pdfL
 
   const handleLoadClick = () => {
     if (fileInputRef.current) {
-      // Resetta il valore dell'input per permettere di selezionare lo stesso file e scatenare l'onChange
       fileInputRef.current.value = "";
       fileInputRef.current.click();
     }
@@ -26,7 +25,7 @@ function Toolbar({ onFileLoad, mode, onModeChange, onSave, onUndo, canUndo, pdfL
     <div className="toolbar">
       <div className="toolbar-left">
         <input ref={fileInputRef} type="file" accept=".pdf" onChange={handleFileSelect} style={{ display: "none" }} />
-        <button onClick={handleLoadClick}>Carica PDF</button>
+        <button onClick={handleLoadClick}>Upload PDF</button>
       </div>
 
       {pdfLoaded && (
@@ -34,21 +33,22 @@ function Toolbar({ onFileLoad, mode, onModeChange, onSave, onUndo, canUndo, pdfL
           <div className="field-row">
             <input type="checkbox" id="mode-text" checked={mode === "text"} onChange={() => onModeChange(mode === "text" ? null : "text")} />
             <label htmlFor="mode-text" style={{ marginRight: "1rem" }}>
-              Aggiungi Testo
+              Add Text
             </label>
 
             <input type="checkbox" id="mode-pen" checked={mode === "pen"} onChange={() => onModeChange(mode === "pen" ? null : "pen")} />
-            <label htmlFor="mode-pen">Penna/Firma</label>
+            <label htmlFor="mode-pen">Pen/Signature</label>
           </div>
         </div>
       )}
 
       {pdfLoaded && (
         <div className="toolbar-right">
-          <button onClick={onUndo} disabled={!canUndo} title="Annulla ultima modifica">
-            Annulla
+          <button onClick={onUndo} disabled={!canUndo} title="Undo last modification">
+            ◄ Undo
           </button>
-          <button onClick={onSave}>Salva PDF</button>
+
+          <button onClick={onSave} disabled={!canUndo}>Save PDF</button>
         </div>
       )}
     </div>

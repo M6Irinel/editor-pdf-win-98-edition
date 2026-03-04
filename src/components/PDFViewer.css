@@ -4,13 +4,19 @@
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .pdf-controls {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 0.75rem;
+  position: sticky;
+  top: 0;
+  background: #c0c0c0;
+  z-index: 100;
+  padding: 10px 11px;
 }
 
 .page-info {
@@ -22,9 +28,9 @@
 .zoom-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   margin-left: 5px;
-  padding-left: 20px;
+  padding-left: 15px;
   border-left: 1px solid #808080;
 }
 
@@ -33,7 +39,6 @@
   background: #fff;
   display: inline-block;
   line-height: 0;
-  /* Use 98.css inset borders instead of custom borders */
   box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px #808080;
   padding: 2px;
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 5px;
   background: #c0c0c0;
   border-bottom: 2px solid #808080;
   z-index: 100;
@@ -14,5 +14,3 @@
   display: flex;
   gap: 10px;
 }
-
-/* Rimuovo le classi custom dei bottoni così 98.css può applicare lo stile nativo */

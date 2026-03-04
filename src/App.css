@@ -1,5 +1,3 @@
-/* Rimosso .app perché uso .window direttamente in App.jsx */
-
 .welcome-screen {
   display: flex;
   flex-direction: column;

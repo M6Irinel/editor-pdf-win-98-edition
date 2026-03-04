@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Serve per far caricare correttamente i file quando si apre index.html direttamente dal computer
+  base: './',
   server: {
     port: 3000
   }
